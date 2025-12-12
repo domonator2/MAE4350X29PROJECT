@@ -24,8 +24,6 @@ All code is organized into folders corresponding to the project disciplines. The
 
 /Common/: Any shared functions, constants, or data files that are used by more than one discipline.
 
-main_simulation.m: (DO NOT EDIT DIRECTLY) This is the main, top-level script that runs the entire simulation. It will be managed only by the Synthesis lead.
-
 ⚙️ The Workflow: How We Work Together
 To prevent code conflicts and lost work, we will use a standard "branching" workflow. No one should ever work directly on the main branch.
 
