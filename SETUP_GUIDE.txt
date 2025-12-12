@@ -1,0 +1,69 @@
+================================================================================
+          VS Code, Git, and GitHub Setup Guide for MAE 4350 Project
+================================================================================
+
+Hello Team,
+
+This guide will walk you through setting up your development environment to collaborate on our MAE 4350 project. Following these steps will ensure we all have a consistent setup, allowing us to work efficiently with Git, GitHub, and the GitHub Copilot AI assistant.
+
+---
+### Step 1: Install Required Software
+---
+
+1.  **Install Git:**
+    *   Git is the version control system we use to track changes in our code.
+    *   Download and install it from the official website: https://git-scm.com/downloads
+    *   During installation, you can accept the default settings for most options. It's important that Git is added to your system's PATH so it can be used from any terminal.
+
+2.  **Install Visual Studio Code (VS Code):**
+    *   This will be our primary code editor.
+    *   Download and install it from the official website: https://code.visualstudio.com/
+
+---
+### Step 2: Configure Git
+---
+
+1.  **Open a Terminal:** You can use the terminal that comes with your OS (like PowerShell on Windows or Terminal on Mac/Linux) or the integrated terminal in VS Code (View -> Terminal).
+
+2.  **Set Your Name and Email:** Git needs to know who is making each commit. Use the exact same email address that you use for your GitHub account.
+    ```
+    git config --global user.name "Your Name"
+    git config --global user.email "youremail@example.com"
+    ```
+
+---
+### Step 3: Set Up VS Code
+---
+
+1.  **Install Essential Extensions:** Open VS Code, go to the Extensions view (the icon with four squares on the left sidebar), and install the following:
+    *   **GitHub Copilot:** (ID: `GitHub.copilot`) - This is the AI pair programmer that can write code, suggest solutions, and answer questions.
+    *   **GitHub Copilot Chat:** (ID: `GitHub.copilot-chat`) - This provides the chat interface to interact with the Copilot AI, just like the Chief Engineer does.
+    *   **GitHub Pull Requests and Issues:** (ID: `github.vscode-pull-request-github`) - Essential for managing our project directly within VS Code.
+    *   **MATLAB:** (ID: `mathworks.matlab`) - Since our project involves MATLAB, this will provide syntax highlighting and language support.
+
+2.  **Clone the Project Repository:**
+    *   Open the Command Palette in VS Code (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+    *   Type `Git: Clone` and press Enter.
+    *   Paste the URL of our GitHub repository: `https://github.com/domonator2/MAE4350-X29-PROJECT.git`
+    *   Choose a location on your computer to save the project.
+    *   VS Code will ask if you want to open the cloned repository. Click "Open".
+
+3.  **Authenticate with GitHub:**
+    *   The first time you try to pull from or push to the repository, VS Code will prompt you to sign in to GitHub.
+    *   A browser window will open. Authorize VS Code to access your GitHub account. This allows you to work with the remote repository without needing to enter your password every time.
+    *   You will also need to sign in to GitHub to activate the Copilot extensions. Click the bell icon in the bottom right or the accounts icon (person silhouette) in the bottom left to sign in.
+
+---
+### Step 4: Your Workflow
+---
+
+1.  **Always Pull First:** Before you start working, get the latest changes from the team by running `git pull` in the terminal or by clicking the sync button in the bottom-left status bar in VS Code.
+2.  **Work on your files.**
+3.  **Stage and Commit:** When you've made a set of changes, go to the "Source Control" view (the icon with three connected dots on the left sidebar). Add a commit message describing your work and click the checkmark to commit.
+4.  **Push Your Changes:** After committing, click the sync button again or run `git push` to upload your changes for the rest of the team to see.
+
+================================================================================
+If you run into any issues, please don't hesitate to ask for help.
+
+- Dominic, Chief Engineer
+================================================================================
